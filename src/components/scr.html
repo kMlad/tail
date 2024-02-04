@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAIL - Your AI Shopping Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Additional styles if needed */
+        .search-input {
+            transition: width 0.4s ease-in-out;
+        }
+        .search-input:focus {
+            width: 20rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <div class="min-h-screen flex flex-col items-center justify-center">
+        <h1 class="text-6xl font-bold text-orange-400 mb-4">
+            TAIL <span class="text-white">your AI shopping assistant</span>
+        </h1>
+        <div class="relative">
+            <input type="search" class="search-input px-5 py-2 w-64 rounded-full text-sm focus:outline-none" placeholder="What are you looking for today?" />
+            <button class="absolute top-0 right-0 mt-2 mr-4">
+                <i class="fas fa-search text-gray-400"></i>
+            </button>
+        </div>
+        <div class="flex mt-4">
+            <button class="bg-red-600 text-white px-6 py-2 rounded-l-full hover:bg-red-700 focus:outline-none">For Work</button>
+            <button class="bg-blue-200 text-gray-800 px-6 py-2 hover:bg-blue-300 focus:outline-none">For Home</button>
+            <button class="bg-green-200 text-gray-800 px-6 py-2 rounded-r-full hover:bg-green-300 focus:outline-none">For Me</button>
+        </div>
+    </div>
+</body>
+</html>
